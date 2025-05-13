@@ -5,81 +5,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {
-  --color-background: #fff;
-  --color-foreground: #333;
-  --color-highlight: #800000;
+  --color-background: #FFFFFF;
+  --color-foreground: #595959;
+  --color-highlight: #00CCFF;
 }
 
+
+/* スライド 全体*/
 section {
+  color: var(--color-foreground);
   background-image: none;
   font-family: 'Noto Sans JP', sans-serif;
-  padding-top: 90px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 112px;
+  padding-left: 65px;
+  padding-right: 50px;
+  justify-content: start;
+	/* use "background" to specify all at once */
+	background: center/cover url(./themes/bg.svg);
+  background-color: var(--color-background);
+	background-repeat: no-repeat;
 }
 
+/* ページネーション */
 /* https://github.com/marp-team/marpit/issues/271 */
 section::after {
-  font-weight: 700;
-  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+  font-weight: 500.07;
+  font-size: 0.7em;
+  width: 68px;
+  height: 55px;
+  content: attr(data-marpit-pagination);
+  color: #595959;
+  position:  absolute;
+  align-content: center;
+  text-align: center;
+  padding: 1%;
+  padding-top: 3px;
+  bottom: 3px;
 }
 
+/* リスト */
 ul ul {
   font-size: 0.9em;
 }
 
-section.lead h1 {
-  color: #800000;
-  text-align: left;
+/* 見出し lead */
+section.lead {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
+  justify-content: start;
+	/* use "background" to specify all at once */
+	background:
+    center/cover url(./themes/bg_lead.svg);
+  background-color: var(--color-background);
+	background-repeat: no-repeat;
 }
-section.lead h1 strong {
-  -webkit-text-stroke: 1px #800000;
+section.lead h1{
+  color: #3DA4B5;
+  font-size: 2.5em;
 }
-section.lead h2 {
-  color: #800000;
-  text-align: left;
-}
-section.lead h2 strong {
-  -webkit-text-stroke: 1px #800000;
-}
-section.lead h3 {
-  color: #800000;
-  text-align: left;
-}
-section.lead h3 strong {
-  -webkit-text-stroke: 1px #800000;
-}
-section.lead h4 {
-  color: #800000;
-  text-align: left;
-}
-section.lead h4 strong {
-  -webkit-text-stroke: 1px #800000;
-}
+section.lead h3,
+section.lead h4,
 section.lead h5 {
-  color: #800000;
-  text-align: left;
-}
-section.lead h5 strong {
-  -webkit-text-stroke: 1px #800000;
+  color: #3F3F3F;
 }
 section.lead p {
-  text-align: right;
+  color: #3F3F3F;
+  font-size: 0.85em;
 }
 
+/* ヘッダー */
 header {
-  background-color: #800000;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
+  display: flex;
+  color: #3DA4B5;
+  /* background-color: #D8D8D8;  */
+  height: 80px;
+  font-size: 1.3em;
+  font-weight: 510;
+  padding-left: 60px;
+  padding-top: 27px;
+  padding-bottom: 0px;
 }
 
+/* 引用 */
 blockquote {
-  max-width: 90%;
-  border-top: 0.1em dashed #555;
+  max-width: 86%;
+  border-top: 0.2em dashed #D8D8D8;
   font-size: 60%;
   position: absolute;
   bottom: 20px;
+  padding-top: 0.8%;
 }
 blockquote::before {
   content: "";
@@ -91,6 +108,7 @@ blockquote::after {
 img[alt~="center"] {
   display: block;
   margin: 0 auto;
+  border: 3px solid #D8D8D8;
 }
 
 code {
