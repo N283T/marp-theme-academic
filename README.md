@@ -1,8 +1,8 @@
 # marp-theme-academic
 
-![](./demo_imgs/demo.001.png)
-![](./demo_imgs/demo.002.png)
-![](./demo_imgs/demo.003.png)
-![](./demo_imgs/demo.004.png)
-![](./demo_imgs/demo.005.png)
-![](./demo_imgs/demo.006.png)
+![](./demo_imgs/demo_1.png)
+![](./demo_imgs/demo_2.png)
+![](./demo_imgs/demo_3.png)
+![](./demo_imgs/demo_4.png)
+![](./demo_imgs/demo_5.png)
+![](./demo_imgs/demo_6.png)
